@@ -1,8 +1,8 @@
 
 const chai = require('chai');
 const chaiHttp = require('chai-http');
-const app = require('../server'); // Adjust path to your server.js
-const connectDB  = require('../config/database'); // Adjust based on your project structure
+const app = require('../server'); 
+const connectDB  = require('../config/database'); 
 
 const { expect } = chai;
 chai.use(chaiHttp);
@@ -12,7 +12,6 @@ const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzE1NmM2NmFh
 describe('User Controller Tests', () => {
   let userId = '67151d50336cf6336982c1fb';
 
-  // Ensure database is connected before running tests
 
   it('should create a new user',async function(){
     this.timeout(30000); 
