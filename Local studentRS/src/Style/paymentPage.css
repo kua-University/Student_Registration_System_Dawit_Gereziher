@@ -1,0 +1,91 @@
+/* Base styling for Stripe Element */
+.StripeElement {
+    width: 100%;
+    padding: 14px 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover/focus */
+  }
+  
+  /* Focus state styling */
+  .StripeElement--focus {
+    border-color: #4CAF50; /* Green border on focus */
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3); /* Green shadow for focus */
+    transform: translateY(-2px); /* Slight lift on focus */
+  }
+
+ .error {
+    color:red;
+    font-weight: bolder;
+  }
+  
+  /* Invalid state styling */
+  .StripeElement--invalid {
+    border-color: red;
+    background-color: #ffe6e6; /* Light red background */
+    box-shadow: 0 4px 12px rgba(255, 0, 0, 0.2); /* Red shadow for invalid input */
+    transform: scale(1.02); /* Slight zoom-in effect when invalid */
+  }
+  
+  /* Placeholder Styling */
+  .StripeElement::placeholder {
+    color: #888;
+    font-size: 14px;
+    transition: color 0.2s ease-in-out; /* Smooth placeholder color transition */
+  }
+  
+  /* Hover effect on card input */
+  .StripeElement:hover {
+    border-color: #3b9b57; /* Darker green on hover */
+    background-color: #f4f4f4;
+    transform: scale(1.01); /* Slight zoom-in on hover */
+  }
+  
+  /* Active typing effect */
+  .StripeElement--focus::placeholder {
+    color: #4CAF50; /* Green placeholder color when focused */
+    font-style: italic; /* Italicize placeholder text */
+  }
+  
+  /* Optional: A smooth border transition effect */
+  .StripeElement {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ccc;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .StripeElement:focus {
+    border-color: #4CAF50; /* Green focus border */
+    transform: translateY(-3px); /* Slight movement on focus */
+  }
+  
+  /* Transition effect for invalid input */
+  .StripeElement--invalid {
+    animation: shake 0.4s ease-in-out; /* Add shake animation */
+  }
+  
+  /* Keyframe for shake animation */
+  @keyframes shake {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-5px);
+    }
+    50% {
+      transform: translateX(5px);
+    }
+    75% {
+      transform: translateX(-5px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
